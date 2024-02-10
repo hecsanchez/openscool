@@ -19,7 +19,7 @@ const ButtonWrapper = styled.button<ButtonWrapperProps>`
       border-color: #b4b4b4;
       color: #b4b4b4;
       background: #ffffff;
-      transition: all .2s ease;
+      transition: border-color, color .2s ease;
       
       &:hover {
         color: #323232;
