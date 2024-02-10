@@ -8,10 +8,10 @@ const Nav = () => {
 
     return (
         <NavWrapper>
-            <NavItem active={isActive('/community')} href="/community">Community</NavItem>
-            <NavItem active={isActive('/classroom')} href="/classroom">Classroom</NavItem>
-            <NavItem active={isActive('/members')} href="/members">Members</NavItem>
-            <NavItem active={isActive('/about')} href="/about">About</NavItem>
+            <NavItem $active={isActive('/community')} href="/community">Community</NavItem>
+            <NavItem $active={isActive('/classroom')} href="/classroom">Classroom</NavItem>
+            <NavItem $active={isActive('/members')} href="/members">Members</NavItem>
+            <NavItem $active={isActive('/about')} href="/about">About</NavItem>
         </NavWrapper>
     )
 }

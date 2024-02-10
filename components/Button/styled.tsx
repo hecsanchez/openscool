@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface ButtonWrapperProps {
-  secondary?: boolean;
+  $secondary?: boolean;
 }
 
 const ButtonWrapper = styled.button<ButtonWrapperProps>`
@@ -15,7 +15,7 @@ const ButtonWrapper = styled.button<ButtonWrapperProps>`
   font-weight: 600;
   cursor: pointer;
   
-  ${({ secondary = false }) => secondary ? `
+  ${({ $secondary = false }) => $secondary ? `
       border-color: #b4b4b4;
       color: #b4b4b4;
       background: #ffffff;

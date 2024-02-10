@@ -12,8 +12,8 @@ const NavButtons: FC<NavButtonProps> = ({ hasSession = false }) => {
                 <div></div>
             ) : (
                 <>
-                    <Button secondary>Signup</Button>
-                    <Button secondary>Login</Button>
+                    <Button $secondary>Signup</Button>
+                    <Button $secondary>Login</Button>
                 </>
             )}
         </NavButtonsWrapper>
