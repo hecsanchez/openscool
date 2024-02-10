@@ -1,5 +1,5 @@
-import NavWrapper from "./Nav.styled";
-import NavItem from "@/components/NavItem/NavItem.styled";
+import NavWrapper from "./styled";
+import NavItem from "@/components/NavItem/styled";
 import {useRouter} from "next/router";
 
 const Nav = () => {

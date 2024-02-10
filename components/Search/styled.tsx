@@ -26,6 +26,10 @@ const SearchWrapper = styled.div`
       outline: none;
       border-color: #323232;
     }
+
+   &::placeholder {
+     color: #b4b4b4;
+   }
   }
 `
 

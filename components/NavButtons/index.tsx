@@ -1,6 +1,6 @@
-import NavButtonsWrapper from "./NavButtons.styled";
+import NavButtonsWrapper from "./styled";
 import {FC} from "react";
-import Button from "@/components/Button/Button.styled";
+import Button from "@/components/Button/styled";
 
 interface NavButtonProps {
     hasSession?: boolean;
