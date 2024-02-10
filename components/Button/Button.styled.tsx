@@ -1,6 +1,10 @@
-import styled from '@emotion/styled'
+import styled from "styled-components";
 
-const ButtonWrapper = styled.button`
+interface ButtonWrapperProps {
+  secondary?: boolean;
+}
+
+const ButtonWrapper = styled.button<ButtonWrapperProps>`
   border-radius: 5px;
   border: 1px solid;
   height: 45px;
@@ -11,7 +15,7 @@ const ButtonWrapper = styled.button`
   font-weight: 600;
   cursor: pointer;
   
-  ${({ secondary }) => secondary ? `
+  ${({ secondary = false }) => secondary ? `
       border-color: #b4b4b4;
       color: #b4b4b4;
       background: #ffffff;

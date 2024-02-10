@@ -3,7 +3,7 @@ import Nav from "@/components/Nav/Nav";
 import NavBar from "@/components/NavBar/NavBar";
 import {FC} from "react";
 
-const Layout: FC = ({ children }) => {
+const Layout: FC<any> = ({ children }) => {
     return (
         <main>
             <LayoutWrapper>
