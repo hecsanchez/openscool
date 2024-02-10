@@ -6,6 +6,15 @@ const nextConfig = {
       displayName: true
     }
   },
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/community',
+        permanent: true,
+      },
+    ]
+  },
 };
 
 export default nextConfig;
