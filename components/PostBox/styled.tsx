@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const PostBoxWrapper = styled.div`
-    border: 2px solid #f5f5f5;
+    border: 1px solid #e0dfdb;
     padding: 20px;
     border-radius: 5px;
     background: #ffffff;

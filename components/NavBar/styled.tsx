@@ -7,13 +7,13 @@ export const NavBarWrapper = styled.div`
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 0 5px 0 #ebebeb;  
+  border-bottom: 1px solid #e0dfdb;
 `
 
 export const NavBarContent = styled(ContentWrapper)`
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 20px 0;
+  padding: 10px 0;
   align-items: center;
 `

@@ -39,7 +39,7 @@ export const Title = styled.h2`
   color: #323232;
   line-height: 1.5;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 `
 
 export const Summary = styled.div`
