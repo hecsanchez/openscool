@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const FeedWrapper = styled.div`
   grid-column: 1 / span 7;
-  margin: 40px 0;
   display: grid;
   gap: 15px;
 `

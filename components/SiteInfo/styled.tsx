@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const SiteInfoWrapper = styled.div`
-  margin-top: 40px;
   grid-column: 8 / span 3;
   
   & p {

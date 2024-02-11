@@ -1,5 +1,4 @@
-import LayoutWrapper from "@/components/Layout/styled";
-import Nav from "@/components/Nav";
+import {LayoutWrapper, BottomContent} from "@/components/Layout/styled";
 import NavBar from "@/components/NavBar";
 import {FC} from "react";
 
@@ -8,7 +7,9 @@ const Layout: FC<any> = ({ children }) => {
         <main>
             <LayoutWrapper>
                 <NavBar/>
-                {children}
+                <BottomContent>
+                    {children}
+                </BottomContent>
             </LayoutWrapper>
         </main>
     )

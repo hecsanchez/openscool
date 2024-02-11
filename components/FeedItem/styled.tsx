@@ -9,7 +9,7 @@ export const FeedItemWrapper = styled(Card)<FeedItemWrapperProps>`
   ${({ pinned }) => pinned ? `background: #fff9e5;` : ''}
   
   &:hover {
-    box-shadow: 0 2px 5px 0 #dddddd;
+    box-shadow: 0 2px 5px 2px #dddddd;
   }
 `
 

@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-const LayoutWrapper = styled.div`
+export const LayoutWrapper = styled.div`
   background-color: #f4f2ee;
   min-height: 100vh;
 `
 
-export default LayoutWrapper;
+export const BottomContent = styled.div`
+    padding: 40px 0 10px;
+`
