@@ -56,7 +56,9 @@ const Community: NextPage<CommunityPageProps> = ({
                     <Feed
                         posts={posts}
                         currentPage={page}
+                        currentItems={posts.length}
                         totalPages={totalPages}
+                        totalItems={total}
                         onNext={handleNext}
                         onPrevious={handlePrevious}
                         onPageClick={handleGoToPage}
@@ -76,7 +78,7 @@ export async function getServerSideProps(ctx: NextPageContext) {
     // TODO: Connect to server
     const query = ctx.query;
     const page = Number(query.page ?? 1);
-    const total = 180;
+    const total = 200;
     const totalPages = Math.round(total / 20);
 
     if (page > totalPages) {

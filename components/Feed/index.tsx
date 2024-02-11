@@ -10,20 +10,24 @@ interface FeedProps {
     posts: Post[];
     user?: User;
     currentPage: number;
+    currentItems: number;
     totalPages: number;
     onNext: () => void;
     onPrevious: () => void;
     onPageClick: (page: number) => void;
+    totalItems: number;
 }
 
 const Feed: FC<FeedProps> = ({
     posts,
     user,
     currentPage,
+    currentItems,
     totalPages,
     onNext,
     onPrevious,
-    onPageClick
+    onPageClick,
+    totalItems
 }) => {
     return (
         <FeedWrapper>
@@ -43,7 +47,9 @@ const Feed: FC<FeedProps> = ({
             ))}
             <Pagination
                 currentPage={currentPage}
+                currentItems={currentItems}
                 totalPages={totalPages}
+                totalItems={totalItems}
                 onNext={onNext}
                 onPrevious={onPrevious}
                 onPageClick={onPageClick}

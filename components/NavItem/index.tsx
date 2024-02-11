@@ -8,7 +8,7 @@ interface NavItemWrapperProps {
 const NavItemWrapper = styled(Link)`
   display: flex;
   justify-content: center;
-  padding: 5px 0;
+  padding: 12px 0;
   text-decoration: none;
   color: ${(props: NavItemWrapperProps)=> props.$active ? '#323232' : '#b4b4b4'};
   font-weight: 500;
@@ -19,7 +19,7 @@ const NavItemWrapper = styled(Link)`
   &:after {
     ${(props) => props.$active && `
         content: '';
-        bottom: -17px;
+        bottom: -10px;
         border-bottom: 4px solid;
         border-color: black;
         width: 100%;

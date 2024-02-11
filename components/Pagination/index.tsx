@@ -3,19 +3,22 @@ import Image from "next/image";
 import caretLeft from '@/assets/svg/caret.svg'
 import {FC} from "react";
 import PagesList from "@/components/Pagination/PagesList";
+import ItemsCount from "@/components/Pagination/ItemsCount";
 
 interface PaginationProps {
+    totalItems: number;
     totalPages: number;
     currentPage: number;
+    currentItems: number;
     onNext: () => void;
     onPrevious: () => void;
     onPageClick: (page: number) => void;
-}
-
-interface PagesProps {
 
 }
+
 const Pagination: FC<PaginationProps> = ({
+    totalItems,
+    currentItems,
     totalPages = 1,
     currentPage = 1,
     onNext,
@@ -32,6 +35,7 @@ const Pagination: FC<PaginationProps> = ({
             <PaginationButton onClick={onNext} disabled={currentPage === totalPages}>
                 <Image style={{ transform: 'rotate(180deg)' }} src={caretLeft} alt="previous"/>
             </PaginationButton>
+            <ItemsCount currentPage={currentPage} totalItems={totalItems} currentItems={currentItems}/>
         </PaginationWrapper>
     )
 }
