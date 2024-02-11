@@ -1,10 +1,10 @@
 export default {
     id: "b752dc3f917645079gbd93e2438e51c6",
-    name: "techinnovate",
+    name: "Techinnovate",
     metadata: {
         calendarEnabled: 1,
         color: "#FF5733",
-        coverSmallUrl: "https://via.placeholder.com/150",
+        coverSmallUrl: "https://picsum.photos/150",
         createdBy: "b82f68548e2d48d38f68214907f2d089",
         creatorUser: JSON.stringify({
             id: "b82f68548e2d48d38f68214907f2d089",

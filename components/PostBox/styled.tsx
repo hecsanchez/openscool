@@ -20,10 +20,6 @@ const PostBoxWrapper = styled.div`
      width: 100%;
      box-sizing: border-box;
      cursor: pointer;
-     
-     &::placeholder {
-       font-weight: 500;
-     }
    }
 `
 

@@ -9,6 +9,7 @@ import {Site} from "@/types/Site";
 
 import posts from '@/data/posts';
 import site from "@/data/site";
+import SiteInfo from "@/components/SiteInfo";
 interface CommunityPageProps {
     posts: Post[];
     site: Site;
@@ -20,6 +21,7 @@ const Community: NextPage<CommunityPageProps> = ({ posts, site }) => {
             <ContentWrapper>
                 <SplitLayout>
                     <Feed posts={posts} />
+                    <SiteInfo data={site}/>
                 </SplitLayout>
             </ContentWrapper>
 

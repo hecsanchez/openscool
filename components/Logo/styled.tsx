@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const LogoWrapper = styled.div`
-  max-width: 150px;
+  max-width: 130px;
   
   
   & > img {

@@ -1,4 +1,17 @@
 import styled from "styled-components";
+import {Card} from "@/components/Card";
+
+interface FeedItemWrapperProps {
+    pinned: boolean;
+}
+export const FeedItemWrapper = styled(Card)<FeedItemWrapperProps>`
+  cursor: pointer;
+  ${({ pinned }) => pinned ? `background: #fff9e5;` : ''}
+  
+  &:hover {
+    box-shadow: 0 2px 5px 0 #dddddd;
+  }
+`
 
 export const PinnedHeader = styled.div`
   height: 20px;
@@ -25,6 +38,8 @@ export const Title = styled.h2`
   word-break: break-word;
   color: #323232;
   line-height: 1.5;
+  margin-top: 10px;
+  margin-bottom: 10px;
 `
 
 export const Summary = styled.div`
@@ -32,6 +47,7 @@ export const Summary = styled.div`
   word-break: break-word;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 300;
 `
 
 export const UserInfo = styled.div`

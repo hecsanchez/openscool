@@ -1,6 +1,6 @@
 import {CardContent, Card} from "@/components/Card";
 import {FC} from "react";
-import {PinnedHeader, Summary, Title, UserInfo} from "./styled";
+import {FeedItemWrapper, PinnedHeader, Summary, Title, UserInfo} from "./styled";
 import {User} from "@/types/User";
 import Image from "next/image";
 import pushPinIcon from '@/assets/svg/pushpin.svg'
@@ -28,7 +28,7 @@ const PostItem: FC<PostItemProps> = ({
   created
 }) => {
     return (
-        <Card style={pinned ? { background: `#fff9e5`} : {}}>
+        <FeedItemWrapper pinned={pinned}>
             {pinned && (
                 <PinnedHeader>
                     <Image src={pushPinIcon} width={15} height={15} alt="pinned"/>
@@ -46,7 +46,7 @@ const PostItem: FC<PostItemProps> = ({
                 <Title>{ title }</Title>
                 <Summary>{ content }</Summary>
             </CardContent>
-        </Card>
+        </FeedItemWrapper>
     )
 }
 
