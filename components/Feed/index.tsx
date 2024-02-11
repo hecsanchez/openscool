@@ -4,13 +4,27 @@ import {Post} from "@/types/Post";
 import {FC} from "react";
 import PostBox from "@/components/PostBox";
 import {User} from "@/types/User";
+import Pagination from "@/components/Pagination";
 
 interface FeedProps {
     posts: Post[];
     user?: User;
+    currentPage: number;
+    totalPages: number;
+    onNext: () => void;
+    onPrevious: () => void;
+    onPageClick: (page: number) => void;
 }
 
-const Feed: FC<FeedProps> = ({ posts, user }) => {
+const Feed: FC<FeedProps> = ({
+    posts,
+    user,
+    currentPage,
+    totalPages,
+    onNext,
+    onPrevious,
+    onPageClick
+}) => {
     return (
         <FeedWrapper>
             <PostBox user={user} />
@@ -27,6 +41,13 @@ const Feed: FC<FeedProps> = ({ posts, user }) => {
                     created={post.createdAt}
                 />
             ))}
+            <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onNext={onNext}
+                onPrevious={onPrevious}
+                onPageClick={onPageClick}
+            />
         </FeedWrapper>
     )
 }
