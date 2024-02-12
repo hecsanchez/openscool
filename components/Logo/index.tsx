@@ -1,4 +1,4 @@
-import OpenSchoolLogo from '@/assets/img/OpenScool.png';
+import OpenSchoolLogo from '@/assets/img/openscool.png';
 import Image from 'next/image';
 import LogoWrapper from '@/components/Logo/styled';
 import ContentLink from '@/components/ContentLink';
