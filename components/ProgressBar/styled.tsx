@@ -5,7 +5,11 @@ interface BarProps {
 }
 
 export const ProgressBarWrapper = styled.div`
-  margin: 20px 0;
+  margin: 10px 0 15px;
+  
+  @media screen and (min-width: 767px) {
+    margin: 20px 0;
+  }
 `;
 export const ProgressText = styled.span`
   font-size: 12px;

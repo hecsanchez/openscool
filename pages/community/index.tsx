@@ -11,11 +11,13 @@ import posts from '@/data/posts';
 import site from '@/data/site';
 import SiteInfo from '@/components/SiteInfo';
 import { useRouter } from 'next/router';
+import MobileDetect from "mobile-detect";
 interface CommunityPageProps {
   posts: Post[];
   site: Site;
   page: number;
   total: number;
+  isMobile: boolean;
 }
 
 const Community: NextPage<CommunityPageProps> = ({
@@ -23,6 +25,7 @@ const Community: NextPage<CommunityPageProps> = ({
   site,
   page,
   total,
+  isMobile = false
 }) => {
   const router = useRouter();
 
@@ -63,7 +66,9 @@ const Community: NextPage<CommunityPageProps> = ({
             onPrevious={handlePrevious}
             onPageClick={handleGoToPage}
           />
-          <SiteInfo data={site} />
+          {!isMobile && (
+              <SiteInfo data={site} />
+          )}
         </SplitLayout>
       </ContentWrapper>
     </Layout>
@@ -78,6 +83,8 @@ export async function getServerSideProps(ctx: NextPageContext) {
   const page = Number(query.page ?? 1);
   const total = 200;
   const totalPages = Math.round(total / 20);
+  const md = new MobileDetect(ctx.req?.headers["user-agent"] as string);
+  const isMobile = md.mobile();
 
   if (page > totalPages) {
     return {
@@ -89,6 +96,6 @@ export async function getServerSideProps(ctx: NextPageContext) {
   }
 
   return {
-    props: { posts, site, page, total },
+    props: { posts, site, page, total, isMobile },
   };
 }

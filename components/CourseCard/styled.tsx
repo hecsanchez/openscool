@@ -33,7 +33,7 @@ export const CourseTitle = styled.h2`
 `;
 
 export const CourseSummary = styled.div`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.5;
   overflow: hidden;
@@ -43,4 +43,8 @@ export const CourseSummary = styled.div`
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: 50px;
+
+  @media screen and (min-width: 767px) {
+    font-size: 16px;
+  }
 `;

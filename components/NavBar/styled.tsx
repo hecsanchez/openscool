@@ -11,9 +11,12 @@ export const NavBarWrapper = styled.div`
 `;
 
 export const NavBarContent = styled(ContentWrapper)`
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
   padding: 10px 0;
-  align-items: center;
+
+  @media screen and (min-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+  }
 `;
