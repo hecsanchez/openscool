@@ -1,9 +1,5 @@
-import {Layout} from "@/components";
+import { Layout } from '@/components';
 
 export default function About() {
-    return (
-        <Layout>
-
-        </Layout>
-    );
+  return <Layout></Layout>;
 }

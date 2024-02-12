@@ -1,13 +1,13 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
-import { Roboto_Flex } from 'next/font/google'
+import '@/styles/globals.css';
+import type { AppProps } from 'next/app';
+import { Roboto_Flex } from 'next/font/google';
 
-const roboto = Roboto_Flex({ subsets: ['latin'] })
+const roboto = Roboto_Flex({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-      <div className={roboto.className}>
-        <Component {...pageProps} />
-      </div>
-  )
+    <div className={roboto.className}>
+      <Component {...pageProps} />
+    </div>
+  );
 }

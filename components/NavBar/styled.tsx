@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import ContentWrapper from "@/components/Wrapper/styled";
+import styled from 'styled-components';
+import ContentWrapper from '@/components/Wrapper/styled';
 
 export const NavBarWrapper = styled.div`
   background-color: #ffffff;
@@ -8,7 +8,7 @@ export const NavBarWrapper = styled.div`
   top: 0;
   z-index: 10;
   border-bottom: 1px solid #e0dfdb;
-`
+`;
 
 export const NavBarContent = styled(ContentWrapper)`
   display: flex;
@@ -16,4 +16,4 @@ export const NavBarContent = styled(ContentWrapper)`
   gap: 30px;
   padding: 10px 0;
   align-items: center;
-`
+`;

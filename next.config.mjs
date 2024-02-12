@@ -3,8 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   compiler: {
     styledComponents: {
-      displayName: true
-    }
+      displayName: true,
+    },
   },
   async redirects() {
     return [
@@ -13,7 +13,7 @@ const nextConfig = {
         destination: '/community',
         permanent: true,
       },
-    ]
+    ];
   },
   images: {
     remotePatterns: [

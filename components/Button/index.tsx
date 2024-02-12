@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface ButtonWrapperProps {
   $secondary?: boolean;
@@ -15,9 +15,11 @@ const Button = styled.button<ButtonWrapperProps>`
   font-weight: 600;
   cursor: pointer;
   width: 100%;
-  letter-spacing: .5px;
-  
-  ${({ $secondary = false }) => $secondary ? `
+  letter-spacing: 0.5px;
+
+  ${({ $secondary = false }) =>
+    $secondary
+      ? `
       border-color: #b4b4b4;
       color: #b4b4b4;
       background: #ffffff;
@@ -27,7 +29,8 @@ const Button = styled.button<ButtonWrapperProps>`
         color: #323232;
         border-color: #323232;
       }
-  ` : `
+  `
+      : `
       border-color: #ff6134;
       color: #ffffff;
       background: #ff6134;

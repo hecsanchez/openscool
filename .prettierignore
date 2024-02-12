@@ -1,0 +1,5 @@
+# Ignore artifacts:
+tests
+node_modules
+.next
+.idea

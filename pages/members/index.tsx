@@ -1,9 +1,5 @@
-import {Layout} from "@/components";
+import { Layout } from '@/components';
 
 export default function Members() {
-    return (
-        <Layout>
-
-        </Layout>
-    );
+  return <Layout></Layout>;
 }

@@ -1,4 +1,5 @@
 # OpenSchool
+
 An open source LLM built with Next.js
 
 ## Getting Started
@@ -17,10 +18,6 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
 ## Learn More
 
-
-
 ## Deploy on Vercel
-

@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import Link from "next/link";
+import styled from 'styled-components';
+import Link from 'next/link';
 
 interface NavItemWrapperProps {
-    $active: boolean;
+  $active: boolean;
 }
 
 const NavItemWrapper = styled(Link)`
@@ -10,14 +10,17 @@ const NavItemWrapper = styled(Link)`
   justify-content: center;
   padding: 12px 0;
   text-decoration: none;
-  color: ${(props: NavItemWrapperProps)=> props.$active ? '#323232' : '#b4b4b4'};
+  color: ${(props: NavItemWrapperProps) =>
+    props.$active ? '#323232' : '#b4b4b4'};
   font-weight: 500;
   font-size: 18px;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
   position: relative;
-  
+
   &:after {
-    ${(props) => props.$active && `
+    ${props =>
+      props.$active &&
+      `
         content: '';
         bottom: -10px;
         border-bottom: 4px solid;
@@ -27,14 +30,14 @@ const NavItemWrapper = styled(Link)`
         position: absolute;
     `}
   }
-  
+
   &:hover {
     color: #323232;
   }
-  
+
   &:focus {
     color: #323232;
   }
-`
+`;
 
 export default NavItemWrapper;

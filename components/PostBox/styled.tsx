@@ -1,26 +1,26 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const PostBoxWrapper = styled.div`
-    border: 1px solid #e0dfdb;
-    padding: 20px;
-    border-radius: 5px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  border: 1px solid #e0dfdb;
+  padding: 20px;
+  border-radius: 5px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+
+  & > input {
+    background: #f5f5f5;
+    border-radius: 50px;
+    padding: 15px;
+    height: 42px;
+    font-size: 16px;
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
     cursor: pointer;
-  
-   & > input {
-     background: #f5f5f5;
-     border-radius: 50px;
-     padding: 15px;
-     height: 42px;
-     font-size: 16px;
-     border: 0;
-     width: 100%;
-     box-sizing: border-box;
-     cursor: pointer;
-   }
-`
+  }
+`;
 
 export default PostBoxWrapper;
