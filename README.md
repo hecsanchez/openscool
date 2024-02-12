@@ -4,7 +4,24 @@ An open source LLM built with Next.js
 
 ## Getting Started
 
-First, run the development server:
+Set node version to v20.11.0
+
+If you are using `nvm` just run `nvm use`
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+
+Run the development server:
 
 ```bash
 npm run dev
